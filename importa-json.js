@@ -1,0 +1,10 @@
+//import estudante from './estudante.json'   //ESSA FORMA É MAIS MODERNA MAS PRECISA DE CONFIGURAÇÕES PARA USÁ-LA 
+const estudante = require('./estudante.json'); // ENQUNTO QUE O REQUIRE É NATIVO DO NODE
+
+// ENTENDO O REQUIRE AQUI ELE ESTÁ IMPORRTANTO UM ARQUIVO JSON E DIGAMOS QUE ELE CONVERTE O ARQUIVO JSON EM OBJETO
+//QUE VAI SER ATRIBUÍDO À CONST ESTUDANTE OU SEJA A CONST ESTUDANTE VAI TER COMO VALOR O OBJETO QUE O REQUIRE 
+//"GEROU" APARTIR DE UM ARQUIVO JSON NOS PERMITINDO UTILIZAR MÉTODOS DE OBJETO
+console.log(estudante);
+console.log(typeof estudante);
+const chaves = Object.keys(estudante)
+console.log(chaves);
