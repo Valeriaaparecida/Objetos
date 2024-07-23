@@ -19,11 +19,7 @@ const estudante  = {
         complemento: null
     }]
 }
-for (let chave in estudante) { //PERCORRE CADA ELEMENTO DO OBJETO 
-   /* console.log(chave); // IMPRIME CADA VALOR PERCORRIDO DO OBJETO PELO MÉTODO FOR IN
-    console.log(estudante[chave]); //ACESSA CADA CHAVE DO OBJETO E TRAS O VALOR CORRESPONDENTE DESSA CHAVE */
-    //const texto = `A chave ${chave} tem o valor ${estudante[chave]}`
-    //console.log(texto);
+for (let chave in estudante) {
     const tipo = typeof estudante [chave];
     if (tipo !== 'object' && tipo !== 'function'){
         const texto = `A chave ${chave} tem o valor ${estudante[chave]}`
