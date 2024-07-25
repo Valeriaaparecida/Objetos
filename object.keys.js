@@ -20,6 +20,6 @@ const estudante  = {
 const chavesObjeto = Object.keys(estudante);
 console.log(chavesObjeto);
 
-if (!chavesObjeto.includes('enderecos')){   //O PONTO DE INTERROGAÇÃO É O OPERADOR DE NEGAÇÃO
+if (!chavesObjeto.includes('enderecos')){   //O PONTO DE EXCLAMAÇÃO É O OPERADOR DE NEGAÇÃO
     console.error('é necessário ter um endereço cadastrado')
 }
